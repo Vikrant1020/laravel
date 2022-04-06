@@ -1,0 +1,21 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      php: 7.4
+  pre_build:
+    commands:
+      # - apt-get install php 7.4
+      # - apt install composer
+      - composer global require laravel/installer
+      # - composer require --dev laravel/dusk
+  post_build:
+    # run-as: ubuntu
+    commands: 
+      # - php artisan dusk
+      # - ./vendor/laravel/dusk/bin/chromedriver-linux
+      - php artisan test
+      
+artifacts:
+  files:
+    - '**/*'
