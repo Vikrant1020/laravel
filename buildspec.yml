@@ -9,7 +9,7 @@ phases:
       - composer global require laravel/installer
   post_build:
     finally:
-      - php artisan build
+      - php artisan test
       
       
 artifacts:
