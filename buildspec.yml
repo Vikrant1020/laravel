@@ -2,10 +2,10 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      php: 7.4
+      php: 7.3
   pre_build:
     commands:
-      - apt-get install php7.4
+      - apt-get install php 7.4
       # - apt install composer
       - composer global require laravel/installer
   post_build:
