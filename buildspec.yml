@@ -11,7 +11,7 @@ phases:
   post_build:
     # run-as: ubuntu
     commands: 
-      - php artisan test
+      - php artisan dusk
       
 artifacts:
   files:
