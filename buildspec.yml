@@ -5,7 +5,7 @@ phases:
       php: 7.4
   pre_build:
     commands:
-      - apt install composer
+      # - apt install composer
       - composer global require laravel/installer
   build:
     commands:
