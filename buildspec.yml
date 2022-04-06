@@ -13,7 +13,7 @@ phases:
       #- django-admin runserver 
   post_build:
     finally:
-      -php artisan serve
+      - php artisan serve
       
 artifacts:
   files:
