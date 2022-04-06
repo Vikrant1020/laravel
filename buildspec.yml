@@ -8,6 +8,7 @@ phases:
       # - apt-get install php 7.4
       # - apt install composer
       - composer global require laravel/installer
+      - composer require --dev laravel/dusk
   post_build:
     # run-as: ubuntu
     commands: 
