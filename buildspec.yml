@@ -8,7 +8,7 @@ phases:
       # - apt install composer
       - composer global require laravel/installer
   post_build:
-    run-as: ec2-user
+    run-as: ubuntu
     commands: 
       - php artisan test
       
