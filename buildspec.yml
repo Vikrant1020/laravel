@@ -1,0 +1,20 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      php: 7.4
+  pre_build:
+    commands:
+      - apt install composer
+      - composer global require laravel/installer
+  build:
+    commands:
+      - echo Build started on `date`
+      #- django-admin runserver 
+  post_build:
+    finally:
+      -php artisan serve
+      
+artifacts:
+  files:
+    - '**/*'
