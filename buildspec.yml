@@ -12,7 +12,7 @@ phases:
   post_build:
     # run-as: ubuntu
     commands: 
-      - php artisan dusk
+      - ./vendor/laravel/dusk/bin/chromedriver-linux
       
 artifacts:
   files:
