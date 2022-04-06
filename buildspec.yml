@@ -8,9 +8,8 @@ phases:
       # - apt install composer
       - composer global require laravel/installer
   post_build:
-    finally:
+    command: 
       - php artisan test
-      
       
 artifacts:
   files:
