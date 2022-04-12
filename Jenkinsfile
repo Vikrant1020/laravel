@@ -7,7 +7,8 @@ pipeline {
                 echo 'buliding'
                 sh 'sudo apt update'
                 sh 'sudo apt install php -y'
-                sh 'sudo apt install composer2 -y'
+                sh 'sudo apt install composer -y'
+                sh 'sudo -H composer self-update'
                 sh 'composer global require laravel/installer'
                 sh 'php artisan serve & sleep 30'
             }
