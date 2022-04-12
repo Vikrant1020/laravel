@@ -8,9 +8,8 @@ pipeline {
                 sh 'sudo apt update'
                 sh 'sudo apt install php -y'
                 sh 'sudo apt install composer -y'
-                sh 'sudo apt update'
                 sh 'sudo apt upgrade -y'
-                sh 'composer self-update --2'
+                sh 'composer update'
                 sh 'composer global require laravel/installer'
                 sh 'php artisan serve & sleep 30'
             }
