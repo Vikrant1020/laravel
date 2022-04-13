@@ -12,11 +12,16 @@ pipeline {
             }
         }
     
-        stage('COMPOSER UPDATE AND RUN ') {
+        stage('COMPOSER UPDATE ') {
             steps {
                 sh 'curl -s https://getcomposer.org/installer | php'
                 sh 'sudo mv composer.phar /usr/local/bin/composer'
-                sh 'composer global require laravel/installer'
+                sh 'composer global require laravel/installer'              
+            }
+        }
+        
+        stage('TEST RUN ') {
+            steps {
                 sh 'php artisan serve & sleep 30'
             }
         }
