@@ -9,4 +9,4 @@ mv composer.phar /usr/local/bin/composer
 composer global require laravel/installer
 apt install php-xml
 apt update
-php atrisan serve &
+
