@@ -14,7 +14,7 @@ phases:
     commands: 
       # - php artisan dusk
       # - ./vendor/laravel/dusk/bin/chromedriver-linux
-      - php artisan serve & sleep 30
+      #- php artisan serve & sleep 30
       
 artifacts:
   files:
