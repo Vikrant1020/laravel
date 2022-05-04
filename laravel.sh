@@ -1,13 +1,13 @@
 #!/bin/bash
 
-yum update
-yum install httpd -y
-yum install php -y
-yum install composer -y
-yum install curl -y
+sudo yum update
+sudo yum install httpd -y
+sudo yum install php -y
+sudo yum install composer -y
+sudo yum install curl -y
 curl -s https://getcomposer.org/installer | php    
 mv composer.phar /usr/local/bin/composer  
 composer global require laravel/installer
-yum install php-xml
-yum update
+sudo yum install php-xml
+sudo yum update
 
