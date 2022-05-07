@@ -1,5 +1,7 @@
 #!/bin/bash -xe 
 
+sudo apt install apache2 -y 
+
 echo "<VirtualHost *:80>
         # The ServerName directive sets the request scheme, hostname and port that
         # the server uses to identify itself. This is used when creating
@@ -30,7 +32,7 @@ CustomLog ${APACHE_LOG_DIR}/access.log combined
         #Include conf-available/serve-cgi-bin.conf
 </VirtualHost>
 
-# vim: syntax=apache ts=4 sw=4 sts=4 sr noet"  > /etc/apache2/sites-available/000-default.conf
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet"  > /etc/apache2/sites-available/000-default.conf 
 
 
 systemctl restart apache2
