@@ -2,11 +2,11 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /
+    destination: /var/www/html
 hooks:
-  AfterInstall:
+  BeforInstall:
     - location: laravel.sh
       timeout: 600
-  #ApplicationStart:
-   # - location: start.sh
-    #  timeout: 100
+  AfterInstall:
+    - location: config.sh
+      timeout: 100
