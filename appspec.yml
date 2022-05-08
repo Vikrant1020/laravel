@@ -4,9 +4,9 @@ files:
   - source: /
     destination: /var/www/html
 hooks:
-  BeforInstall:
+  BeforeInstall:
     - location: laravel.sh
-      timeout: 100
+      timeout: 400
   AfterInstall:
     - location: config.sh
       timeout: 100
