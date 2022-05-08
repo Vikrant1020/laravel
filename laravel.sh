@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xe
 
 cd /home/ubuntu
 sudo apt update
