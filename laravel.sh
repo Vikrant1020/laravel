@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/bash -xe
 
 apt update
-apt install apache2 -y
+apt install httpd -y
 apt install php -y
 apt install composer -y
 curl -s https://getcomposer.org/installer | php    
