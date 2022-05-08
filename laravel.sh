@@ -1,5 +1,6 @@
-#!/bin/bash 
+#!/bin/bash
 
+cd /home/ubuntu
 sudo apt update
 sudo apt install httpd -y
 sudo apt install php -y
