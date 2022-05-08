@@ -2,7 +2,7 @@
 
 cd /home/ubuntu
 sudo apt update
-sudo apt install httpd -y
+sudo apt install apache2 -y
 sudo apt install php -y
 sudo apt install composer -y
 curl -s https://getcomposer.org/installer | php    
