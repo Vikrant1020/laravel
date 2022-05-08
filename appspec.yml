@@ -6,7 +6,7 @@ files:
 hooks:
   BeforInstall:
     - location: laravel.sh
-      timeout: 600
-  #AfterInstall:
-   # - location: config.sh
-    #  timeout: 100
+      timeout: 100
+  AfterInstall:
+    - location: config.sh
+     timeout: 100
