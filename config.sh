@@ -1,6 +1,6 @@
 #!/bin/bash -xe 
 
-sudo apt install apache2 -y 
+sudo apt-get install apache2 -y 
 
 echo "<VirtualHost *:80>
     ServerAdmin admin@example.com
