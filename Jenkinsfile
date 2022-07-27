@@ -5,10 +5,10 @@ pipeline {
         stage('DEPENDENCES') {
             steps {
                 echo 'buliding'
-                sh 'apt update'
-                sh 'apt install php -y'
-                sh 'apt install composer -y'
-                sh 'apt upgrade -y'
+                sh 'sudo apt update'
+                sh 'sudo apt install php -y'
+                sh 'sudo apt install composer -y'
+                sh 'sudo apt upgrade -y'
             }
         }
     
