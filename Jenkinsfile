@@ -22,7 +22,7 @@ pipeline {
         
         stage('TEST RUN ') {
             steps {
-                sh 'php artisan serve & sleep 30'
+                sh 'php artisan serve &'
             }
         }
     }
